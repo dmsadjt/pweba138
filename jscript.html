@@ -1,0 +1,53 @@
+<html>
+
+<head>
+
+    <title>
+        JavaScript
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script>
+        function sayHello() {
+            alert("Hello");
+            console.log("Hello");
+        }
+        function binarySearch(arr, n) {
+            let l = 0;
+            let r = arr.length - 1;
+            while (l <= r) {
+                let m = l + (r - l) / 2;
+
+                if (arr[m] == n) {
+                    return m;
+                }
+
+                if (arr[m] < n) {
+                    l = m + 1;
+                }
+
+                if (arr[m] > n) {
+                    r = m - 1;
+                }
+            }
+            return -1;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container bg-dark" style="height:100%;">
+        <div class="container-fluid p-5">
+            <h1>
+                Binary search!
+            </h1>
+        </div>
+        <script>
+
+        </script>
+    </div>
+</body>
+
+</html>
