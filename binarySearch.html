@@ -10,10 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script>
-        function sayHello() {
-            alert("Hello");
-            console.log("Hello");
-        }
+        const myArr=[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 20, 22, 45, 58, 90, 101, 200, 1099, 2011, 7000, 12333];
         function binarySearch(arr, n) {
             let l = 0;
             let r = arr.length - 1;
@@ -38,14 +35,31 @@
 </head>
 
 <body>
-    <div class="container bg-dark" style="height:100%;">
-        <div class="container-fluid p-5">
-            <h1>
+    <div class="container bg-dark text-white" style="height:100%;">
+        <div class="container-fluid p-5 text-center">
+            <h1 >
                 Binary search!
             </h1>
+            <h2>Given the following array</h2>
+            <p>{2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 20, 22, 45, 58, 90, 101, 200, 1099, 2011, 7000, 12333}</p>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="card bg-primary p-3" style="width: 18rem;">
+                <form class="text-center">
+                    <div class="form-control">
+                        <label for="inputnumber">Enter a number!</label>
+                        <input type="number" id="inputnumber" name="inputnumber">
+                    </div><br>
+                    <div class="btn btn-dark" onclick="printSearch();">
+                        Find!
+                    </div>
+                </form>
+            </div>  
         </div>
         <script>
-
+            function printSearch() {
+            alert("The value you are looking for is at index : " + binarySearch(myArr, 10));
+        }
         </script>
     </div>
 </body>
