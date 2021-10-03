@@ -1,7 +1,5 @@
 <html>
-
 <head>
-
     <title>
         JavaScript
     </title>
@@ -10,14 +8,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script>
-        const myArr=[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 20, 22, 45, 58, 90, 101, 200, 1099, 2011, 7000, 12333];
+        var myArr=[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 20, 22, 45, 58, 90, 101, 200, 1099, 2011, 7000, 12333];
+        //var myArr = [2,3,4,5];
         function binarySearch(arr, n) {
             let l = 0;
-            let r = arr.length - 1;
+            let r = arr.length-1;
             while (l <= r) {
-                let m = l + (r - l) / 2;
+                let m = Math.floor((l + r)/2);
 
-                if (arr[m] == n) {
+                if (arr[m] === n) {
                     return m;
                 }
 
@@ -33,8 +32,8 @@
         }
     </script>
 </head>
-
 <body>
+    
     <div class="container bg-dark text-white" style="height:100%;">
         <div class="container-fluid p-5 text-center">
             <h1 >
@@ -45,7 +44,7 @@
         </div>
         <div class="d-flex flex-row justify-content-center">
             <div class="card bg-primary p-3" style="width: 18rem;">
-                <form class="text-center">
+                <form class="text-center frm1">
                     <div class="form-control">
                         <label for="inputnumber">Enter a number!</label>
                         <input type="number" id="inputnumber" name="inputnumber">
@@ -54,14 +53,15 @@
                         Find!
                     </div>
                 </form>
+                <script>
+                    var n = document.getElementId("frm1");
+                    function printSearch() {
+                    alert("The value you are looking for is at index : " + binarySearch(myArr, 7000));
+                    }
+                </script>
             </div>  
         </div>
-        <script>
-            function printSearch() {
-            alert("The value you are looking for is at index : " + binarySearch(myArr, 10));
-        }
-        </script>
+        
     </div>
 </body>
-
 </html>
