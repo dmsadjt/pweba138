@@ -22,13 +22,17 @@
         </div>
         <div class="d-flex flex-row justify-content-center">
             <div class="card bg-primary p-3" style="width: 18rem;">
-                <div class="form-control text-center">
-                    <label for="inputnumber">Enter a number!</label>
-                    <input type="number" id="inputnumber" name="inputnumber">
-                </div><br>
-                <div class="btn btn-dark" id="find" onclick="printBinarySearch();">
-                    Find!
-                </div>
+                <form action="" method="GET">
+                    <div class="form-control text-center">
+                        <label for="inputnumber">Enter a number!</label>
+                        <input type="number" id="inputnumber" name="inputnumber">
+                    </div><br>
+                    <div class="text-center">
+                        <div class="btn btn-dark" id="find" onclick="printBinarySearch();">
+                            Find!
+                        </div>
+                    </div>
+                </form>
                 <script>
                     //array
                     myArr = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 20, 22, 45, 58, 90, 101, 200, 1099, 2011, 7000, 12333];
