@@ -9,6 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
     <script>
         $(document).ready(function () {
 
@@ -64,13 +68,13 @@
                     $("#name_error").hide();
                     $("#name_ok").show();
                     nametrue = true;
-                    $("#name").css("border","2px solid green");
+                    $("#name").css("border", "2px solid green");
                 }
                 else {
                     $("#name_ok").hide();
                     $("#name_error").show();
                     nametrue = false;
-                    $("#name").css("border","2px solid red");
+                    $("#name").css("border", "2px solid red");
                 }
             }
             function checkAddress() {
@@ -80,13 +84,13 @@
                     $("#address_error").hide();
                     $("#address_ok").show();
                     addresstrue = true;
-                    $("#address").css("border","2px solid green");
+                    $("#address").css("border", "2px solid green");
                 }
                 else {
                     $("#address_ok").hide();
                     $("#address_error").show();
                     addresstrue = false;
-                    $("#address").css("border","2px solid red");
+                    $("#address").css("border", "2px solid red");
                 }
             }
             function checkEmail() {
@@ -96,13 +100,13 @@
                     $("#email_error").hide();
                     $("#email_ok").show();
                     emailtrue = true;
-                    $("#email").css("border","2px solid green");
+                    $("#email").css("border", "2px solid green");
                 }
                 else {
                     $("#email_ok").hide();
                     $("#email_error").show();
                     emailtrue = false;
-                    $("#email").css("border","2px solid red");
+                    $("#email").css("border", "2px solid red");
                 }
             }
             function checkPass() {
@@ -112,13 +116,13 @@
                     $("#pass_error").hide();
                     $("#pass_ok").show();
                     passtrue = true;
-                    $("#passwords").css("border","2px solid green");
+                    $("#passwords").css("border", "2px solid green");
                 }
                 else {
                     $("#pass_ok").hide();
                     $("#pass_error").show();
                     passtrue = false;
-                    $("#passwords").css("border","2px solid red");
+                    $("#passwords").css("border", "2px solid red");
                 }
             }
             function checkTel() {
@@ -128,13 +132,13 @@
                     $("#tel_error").hide();
                     $("#tel_ok").show();
                     teltrue = true;
-                    $("#tel").css("border","2px solid green");
+                    $("#tel").css("border", "2px solid green");
                 }
                 else {
                     $("#tel_ok").hide();
                     $("#tel_error").show();
                     teltrue = false;
-                    $("#tel").css("border","2px solid red");
+                    $("#tel").css("border", "2px solid red");
                 }
             }
             function checkCor() {
@@ -143,13 +147,13 @@
                     $("#course_error").hide();
                     $("#course_ok").show();
                     cortrue = true;
-                    $("#cor").css("border","2px solid green");
+                    $("#cor").css("border", "2px solid green");
                 }
                 else {
                     $("#course_ok").hide();
                     $("#course_error").show();
                     coltrue = false;
-                    $("#cor").css("border","2px solid red");
+                    $("#cor").css("border", "2px solid red");
                 }
             }
             function checkZip() {
@@ -159,13 +163,13 @@
                     $("#zip_error").hide();
                     $("#zip_ok").show();
                     ziptrue = true;
-                    $("#zip").css("border","2px solid green");
+                    $("#zip").css("border", "2px solid green");
                 }
                 else {
                     $("#zip_ok").hide();
                     $("#zip_error").show();
                     ziptrue = false;
-                    $("#zip").css("border","2px solid red");
+                    $("#zip").css("border", "2px solid red");
                 }
             }
 
@@ -186,7 +190,7 @@
                 checkCor();
                 checkZip();
 
-                if(
+                if (
                     nametrue === true &&
                     addresstrue === true &&
                     emailtrue === true &&
@@ -194,11 +198,11 @@
                     teltrue === true &&
                     cortrue === true &&
                     ziptrue === true
-                ){
+                ) {
                     alert("Registration success!");
                     return true;
                 }
-                else{
+                else {
                     alert("Please fill the form correctly");
                     return false;
                 }
@@ -206,17 +210,21 @@
         });
     </script>
     <style>
-        .error{
-            color : red;
+        body{
+            font-family: 'Montserrat', sans-serif;
         }
-        .ok{
-            color : green;
+        .error {
+            color: red;
+        }
+
+        .ok {
+            color: green;
         }
     </style>
 </head>
 
-<body>
-    <div class="container p-5 bg-dark text-white" style="height:100%">
+<body class="bg-dark">
+    <div class="container p-4 bg-dark border-light text-white" style="height:100%">
         <h1>Registration Form</h1>
         <form method="get" id="regform" action="https://github.com/dmsadjt/pweba138">
             <div>
