@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container p-2">
+        <div class="card bg-dark text-white p-2">
+            <div class="card-header">
+                <p>Muhammad Dimas Adijanto <br>
+                Dimas<br>
+                5026201138</p>
+            </div>
+            <div class="card-title text-center">
+                <h1>Form Input Peserta Vaksinasi</h1>
+            </div>
+            <div class="card-body">
+                <form method="get" action="">
+                    <div>
+                        <label for="nama" class="form-label">Nama Peserta</label>
+                        <input type="text" id="nama" class="form-control">
+                    </div>
+                    <div>
+                        <label for="nik" class="form-label">NIK</label>
+                        <input type="text" id="nik" class="form-control">
+                    </div>
+                    <div>
+                        <label for="vac">Jenis Vaksin</label>
+                        <select class="form-select" id="vac">
+                            <option value="0"></option>
+                            <option value="az">AstraZeneca</option>
+                            <option value="sino">Sinovac</option>
+                            <option value="mode">Moderna</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="nob" class="form-label">No Batch</label>
+                        <input type="text" id="nob" class="form-control">
+                    </div>
+                    <div class="row p-3">
+                        <div class="col d-grid ">
+                            <input type="submit" value="Simpan" class="btn btn-primary">
+                        </div>
+                        <div class="col-6 d-grid ">
+                            <input type="reset" class="btn btn-success">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
