@@ -7,6 +7,7 @@
 <body>
     <?php
     echo "juan jancok";
+    echo "juan telek0";
     ?>
 </body>
 
