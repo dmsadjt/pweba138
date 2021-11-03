@@ -10,37 +10,36 @@
 
 <body>
     <div class="container p-5">
-        <form method="post" action="binarysearch.php">
-            <label for="index">Masukkan angka</label>
-            <input type="number" id="index" name="index">
-            <input type="submit">
-        </form>
-        <?php
-        function binary($array, $n)
-        {
-            $l = 0;
-            $r = count($array) - 1;
-            while ($l <= $r) {
-                $m = (floor(($l + $r) / 2));
-                if ($array[$m] == $n) {
-                    return $m;
-                }
+        <div class="row">
+            <div class="col-4">
 
-                if ($array[$m] < $n) {
-                    $l = $m + 1;
-                }
+            </div>
+            <div class="col">
+                <div class="card" style="width: 25rem;">
+                    <div class="card-header">
+                        Cool binary search
 
-                if ($array[$m] > $n) {
-                    $r = $m - 1;
-                }
-            }
-            return -1;
-        }
-        $exarr = [1, 2, 3, 4, 5];
-        $n = $_POST["index"];
-        $result = binary($exarr, $n);
-        echo $result;
-        ?>
+                    </div>
+                    <div class="card-body"></div>
+                    <p class="card-title ps-3 pe-3">
+                        Enter a number to search something in these set of number
+                    </p>
+                    <p class="p-3" style="background-color:black;color:white;">{2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 20, 22, 45, 58, 90, 101, 200, 1099, 2011, 7000, 12333}</p>
+                    <form class="form ps-3 pe-3" method="post" action="submit.php">
+                        <div class="mb-3">
+                            <label for="index" class="form-label">Masukkan angka</label>
+                            <input type="number" id="index" name="index" class="form-control">
+                        </div>
+                        <input type="submit" class="btn btn-primary">
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
     </div>
 
 </body>
