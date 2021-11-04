@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <Title>Test</Title>
+    <Title>The result</Title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -32,29 +32,27 @@
     ?>
 </head>
 
-<body>
+<body style="background-color:#ccffee">
     <div class="container p-5">
-        <div class="row">
-            <div class="col-4">
-
-            </div>
-            <div class="col">
-                <div class="card" style="width: 25rem;">
-                    <div class="card-header">
-                        Cool binary search
-                    </div>
-                    <div class="card-body">
-                        <h1><?php echo binary($exarr, $n);?></h1>
-                        <form class="form ps-3 pe-3" method="post" action="binarysearch.php">
-                            <input type="submit" class="btn btn-primary" value="Go Back">
-                        </form>
-                    </div>
-
+        <div class="d-flex flex-row justify-content-center">
+            <div class="card" style="width: 25rem;">
+                <div class="card-header">
+                    Cool binary search
+                </div>
+                <div class="card-body">
+                    <p>The number you are looking for are in the index no:</P>
+                    <h1 class="text-center"><?php echo binary($exarr, $n); ?></h1>
+                    <p>If you got -1 that means the number does not exist in the array</p>
+                    <form class="form ps-3 pe-3" method="post" action="binarysearch.php">
+                        <input type="submit" class="btn btn-primary" value="Go Back">
+                    </form>
                 </div>
 
             </div>
 
         </div>
+
+    </div>
     </div>
 
 
